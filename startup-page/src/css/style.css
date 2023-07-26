@@ -50,9 +50,117 @@
     font-weight: var(--ff-weight-base);
     box-sizing: border-box;
 }
+a {
+    color: var(--bg-white-03);
+    font-style: normal;
+    text-decoration: none;
+}
+a:hover {
+    color: var(--col-red-01);
+    text-decoration: underline;
+}
+
+/*===: helpers :===*/
+.flex {
+    display: flex;
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
 
 /*===: body :===*/
 body {
-    background-color: var(--bg-dark-01);
+    width: 100%;
+    height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2em;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
     color: var(--bg-white-01);
+    background-color: var(--bg-dark-01);
+}
+
+/*===: top section :===*/
+#section_top_info {
+    width: 100%;
+    margin: 1em 0em;
+    padding: 2.2em 0em;
+    justify-content: space-evenly;
+}
+#time_welcome h3, #date_weather h3 {
+    font-size: 3.3em;
+    font-weight: bold;
+}
+#time_welcome h5, #date_weather h5 {
+    margin-top: .5em;
+    font-size: 1.5em;
+}
+
+/*===: bottom section :===*/
+#section_bottom_links {
+    width: 100%;
+    margin: 1em 0em;
+    gap: 1em;
+    justify-content: center;
+}
+.generic_link {
+    width: 100%;
+    padding: 1.1em 1.1em;
+    background: var(--bg-dark-02);
+}
+
+/*===: middle section :===*/
+#section_middle_search {
+    width: 100%;
+    justify-content: center;
+    padding: 1em 2em;
+    background-color: var(--bg-dark-02);
+}
+.terminal-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.terminal-form label {
+    width: auto;
+    margin-right: 1em;
+}
+.terminal-form input[type="text"] {
+    border: none;
+    flex-grow: 1;
+    background-color: var(--bg-dark-02);
+    color: var(--bg-white-01);
+}
+.terminal-form input[type="text"]:focus {
+    outline: none;
+}
+
+
+
+/*===: prompt section :===*/
+.prompt_link {
+    margin-bottom: 0.5em;
+}
+.res_prompt {
+    margin-left: 1.5em;
+}
+.res_folder {
+    color: var(--col-purple-01);
+}
+
+.col-01 {
+    color: var(--col-red-01);
+}
+.col-02 {
+    color: var(--col-sky-blue-02);
+}
+.col-03 {
+    color: var(--col-purple-01);
+}
+.col-04 {
+    color: var(--col-yellow-01);
 }
