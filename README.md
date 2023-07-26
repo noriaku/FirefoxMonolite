@@ -42,8 +42,6 @@ To start, you must clone the repo and move the folder `startup-page` to a save p
 
 ## 💡 Shorcuts
 
-For the common situations exists shorcuts for be most productive than making use of mouse. If we consider few:
-
 1. Open new tab: `Ctrl + T`.
 2. Close tab: `Ctrl + W`.
 3. Bookmarks: `Ctrl + Shift + B`.
