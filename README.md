@@ -13,7 +13,7 @@
 ## 🌱 Genesis
 
 <p align="justify">
-Monolite theme aims to combine the beauty of pastel colors with monochromatic tones. Using small fonts, prioritizes screen space for greater vision range and increased productivity. On the other hand, we really recommend to use <a href="https://github.com/noriaku/firefox-monolite/startup-page">monolite startup page</a>, designed for people who love terminal environment feeling & ascii art.
+Monolite theme aims to combine the beauty of pastel colors with monochromatic tones. Using small fonts, prioritizes screen space for greater vision range and increased productivity. On the other hand, we really recommend to use <a href="https://github.com/noriaku/firefox-monolite/tree/main/startup-page">monolite startup page</a>, designed for people who love terminal environment feeling & ascii art.
 </p>
  
 ## 🦊 Firefox Theme guide
