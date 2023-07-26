@@ -91,12 +91,12 @@ body {
     justify-content: space-evenly;
 }
 #time_welcome h3, #date_weather h3 {
-    font-size: 3.3em;
+    font-size: 3.2em;
     font-weight: bold;
 }
 #time_welcome h5, #date_weather h5 {
     margin-top: .5em;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 /*===: bottom section :===*/

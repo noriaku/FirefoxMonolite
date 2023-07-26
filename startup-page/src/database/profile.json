@@ -1,5 +1,6 @@
 {
     "username": "Noriaku",
-    "API_KEY": "XXX",
-    "CITY": ""
+    
+    "country": "Peru",
+    "city": "Lima"
 }
