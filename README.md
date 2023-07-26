@@ -1,7 +1,4 @@
-<div align="center">
-    <img src="resources/images/firefox_monolite_hero.png"></img>
-    <br />
-</div>
+![firefox_monolite_hero](resources/images/firefox_monolite_hero.png)
 
 <br />
 <p align="center">
