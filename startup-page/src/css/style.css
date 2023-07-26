@@ -1,1 +1,58 @@
 /* @noriaku | Kalos Lazo */
+
+/*===: root :===*/
+:root {
+    --bg-dark-01: #1A1A1A;
+    --bg-dark-02: #2A2A2A;
+    --bg-dark-03: #333333;
+    --bg-dark-04: #3D3D3D;
+    --bg-dark-05: #505050;
+    --bg-dark-05: #636363;
+    
+    --bg-white-02: #DBDBDB;
+    --bg-white-03: #CDCDCD;
+    --bg-white-01: #E8E8E8;
+    --bg-white-04: #F5F5F5;
+
+    --col-red-01: #C88383;
+    --col-red-02: #D79393;
+    --col-red-03: #E6A3A2;
+    
+    --col-light-orange-01: #C69F66;
+    --col-light-orange-02: #D7B47A;
+    --col-light-orange-03: #E6C98E;
+    
+    --col-purple-01: #A57FAE;
+    --col-purple-02: #B694C1;
+    --col-purple-03: #C7A9D4;
+    
+    --col-yellow-01: #C7B885;
+    --col-yellow-02: #E0D195;
+    --col-yellow-03: #F9EAA5;
+    
+    --col-green-01: #96BF7E;
+    --col-green-02: #A7CC97;
+    --col-green-03: #B8D9B0;
+    
+    --col-sky-blue-01: #7DB4CE;
+    --col-sky-blue-02: #90C6E1;
+    --col-sky-blue-03: #A3D8F4;
+
+    --ff-mono: "Agave Nerd Font";
+    --ff-weight-base: 400;
+}
+
+/*===: general :===*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-mono);
+    font-weight: var(--ff-weight-base);
+    box-sizing: border-box;
+}
+
+/*===: body :===*/
+body {
+    background-color: var(--bg-dark-01);
+    color: var(--bg-white-01);
+}
