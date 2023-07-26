@@ -1,7 +1,6 @@
 <div align="center">
-    <h3>Firefox Theme | Monolite</h3>
+    <img src="resources/images/firefox_monolite_hero.png"></img>
     <br />
-    <img src="resources/images/firefox_monolite_logo.png"></img>
 </div>
 
 <br />
