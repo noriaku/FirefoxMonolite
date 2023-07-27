@@ -1,6 +1,7 @@
 /* @noriaku | Kalos Lazo */
 
 /*===: root :===*/
+/* Change with your colorscheme colors ;)  */
 :root {
     --bg-dark-01: #1A1A1A;
     --bg-dark-02: #2A2A2A;
@@ -139,8 +140,6 @@ body {
     outline: none;
 }
 
-
-
 /*===: prompt section :===*/
 .prompt_link {
     margin-bottom: 0.5em;
@@ -152,6 +151,7 @@ body {
     color: var(--col-purple-01);
 }
 
+/*===: global colors section :===*/
 .col-01 {
     color: var(--col-red-01);
 }
