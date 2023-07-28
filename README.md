@@ -24,8 +24,8 @@ To start, you must clone the repo. You will get also the folder `startup-page`, 
 2. In the config accept the risk if asked. Search the following path `Application Basics > Profile Directory > Open Directory`. This gives your Firefox Profile Folder.
 3. Move `firefox-monolite/theme/chrome/userChrome.css` inside your Profile Folder.
 4. Inside `about:support` set the following properties (changing the boolean value):
-    - browser.search.widget.inNavBar: false
-    - services.sync.prefs.sync.browser.urlbar.showSearchSuggestionsFirst: false
+    - `browser.search.widget.inNavBar`: false
+    - `services.sync.prefs.sync.browser.urlbar.showSearchSuggestionsFirst`: false
 5. Restart firefox, and be familiar with the keys. 
 
 > Obs. If you want to uninstall the theme, just must remove `chrome` folder inside your Firefox Profile Folder and restart your browser.
