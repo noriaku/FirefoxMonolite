@@ -21,9 +21,9 @@ Monolite theme aims to combine the beauty of pastel colors with monochromatic to
 To start, you must clone the repo. You will get also the folder `startup-page`, I really recommend you to follow steps to use it as startpage, cuz works with the same colorscheme and philosophy. 
 
 1. Inside Firefox search at the top bar for `about:support`.
-2. In the config accept the risk if asked. Search the following path `Application Basics > Profile Directory > Open Directory`. This gives your Firefox Profile Folder.
-3. Move `firefox-monolite/theme/chrome/userChrome.css` inside your Profile Folder.
-4. Inside `about:support` set the following properties (changing the boolean value):
+2. Find the `Profile Folder` and click `Open Folder`. This gives your Firefox Profile Folder.
+3. Move `chrome` folder inside theme folder to your Profile Folder.
+4. Inside `about:config` set the following properties (changing the boolean value):
     - `browser.search.widget.inNavBar`: false
     - `services.sync.prefs.sync.browser.urlbar.showSearchSuggestionsFirst`: false
 5. Restart firefox, and be familiar with the keys. 
