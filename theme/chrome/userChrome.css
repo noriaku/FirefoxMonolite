@@ -162,6 +162,12 @@ tab[selected="true"] .tab-background {
 }
 
 /*///// BOOKMARKS /////*/
+#PersonalToolbar {
+    -moz-box-ordinal-group: 1 !important;
+    padding-inline: 11px !important;
+    color: var(--bg-sub-color);
+}
+
 #nav-bar {
     -moz-box-ordinal-group: 2 !important;
     color: var(--selected-color) !important;
@@ -170,12 +176,6 @@ tab[selected="true"] .tab-background {
 #titlebar {
     color: var(--selected-color) !important;
     -moz-box-ordinal-group: 3 !important;
-}
-
-#PersonalToolbar {
-    -moz-box-ordinal-group: 1 !important;
-    padding-inline: 11px !important;
-    color: var(--bg-sub-color);
 }
 
 :root[uidensity="compact"] #PersonalToolbar {
@@ -195,11 +195,9 @@ toolbarbutton.bookmark-item {
 .bookmark-item .toolbarbutton-icon {
     display: none !important;
 }
-
 toolbarbutton.bookmark-item:not(.subviewbutton) {
     min-width: 1.6em !important;
 }
-
 .tab-icon-stack[pinned] {
     border-bottom: 1px solid var(--yellow-color);
     padding: 5px 0px !important;
@@ -215,20 +213,14 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
 #identity-icon-box {
     display: none !important;
 }
-
 #identity-box {
     margin-right: 5px !important;
 }
-
 #nav-bar-overflow-button.toolbarbutton-icon {
     width: 25px !important;
 }
 
-/* @kadaxics -> @lzmkalos */
-
-
 /* REMOTE DEBUGGIN */
-
 #urlbar{
     background-color: transparent;
 }
@@ -311,7 +303,6 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
     background-color: var(--bg-color) !important; 
 }
 
-
 .urlbarView {
     background: var(--bg-sub-color) !important;
 }
@@ -327,4 +318,3 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
 .urlbarView-row .urlbarView-row-inner{
   background-color: var(--bg-sub-color) !important;
 }
-
