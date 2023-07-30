@@ -38,7 +38,14 @@ To start, you must clone the repo and move the folder `startup-page` to a save p
 2. In the "Home" tab, look for "New Windows and Tabs" section.
 3. Inside "Homepage and new windows" set the path of startup-page folder with index.html. For example `file:///home/noriaku/Documents/startup-page/index.html` or a URL with your local webserver.
 
-> Obs. I really recommend you to hostself your startup-page using any local webserver, for example, docker looks atractive for me. If not, weather api won't work cuz CORS problems.
+By the way, for customize the startpage with your custom data (nickname, city, etc), you must edit the database placed at `startup-page/src/database/profile.json`. It allows you to change the following fields:
+
+- Username
+- Category name
+- Links of each category
+- City & Country
+
+Obs. I really recommend you to hostself your startup-page using any local webserver, for example, docker looks atractive for me. If not, weather api won't work cuz CORS problems. On the other hand, you must change the API coordinates with your own info inside `index.js`, check: [open meteo documentation](https://open-meteo.com/en/docs), it's very easy & free.
 
 ## 🦅 Setting up Apache
 
