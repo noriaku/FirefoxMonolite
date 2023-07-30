@@ -4,9 +4,40 @@
 async function handle_get_username() {
     const database = await fetch('src/database/profile.json');
     const data = await database.json();
-    console.log(data)
     const username = data.username;
 
+    // get links & categories
+    const categories = data.categories;
+    const links_sections = document.getElementById('section_bottom_links');
+
+    // change each categorie link data
+    for (let category in categories) {
+        let actual_category_container = document.createElement('div');
+        actual_category_container.className = 'generic_link';
+
+        // make each prompt
+        let promptLinkDiv = document.createElement('div');
+        promptLinkDiv.className = 'prompt_link';
+        promptLinkDiv.innerHTML = `<p><span class="col-01">➜</span> <span class="col-02">ls</span> <span class="col-02">-T</span> <span class="col-04">${category}/</span> </p>`;
+        actual_category_container.appendChild(promptLinkDiv);
+
+        // show category name as responde (from ls -T)
+        let resPromptDiv = document.createElement('div');
+        resPromptDiv.className = 'res_prompt';
+        resPromptDiv.innerHTML = `<p class="res_folder">${category}/</p>`;
+
+        // add each link from actual category
+        for (let link in categories[category]) {
+            let p = document.createElement('p');
+            p.innerHTML = `└── <a href="${categories[category][link]}">${link}</a>`;
+            resPromptDiv.appendChild(p);
+        };
+
+        actual_category_container.appendChild(resPromptDiv);
+        links_sections.appendChild(actual_category_container);
+    };
+
+    // for all .username clases update data.
     const user_name_elements = document.getElementsByClassName("username");
     for (let i = 0; i < user_name_elements.length; i++) {
         user_name_elements[i].textContent = username;
