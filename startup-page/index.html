@@ -3,36 +3,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="src/css/style.css">
-  <link rel="shortcut icon" href="src/images/monolite_logo.png" type="image/x-icon">
-  <title>MonoLite</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/images/monolite_logo.png" type="image/x-icon">
+    <title>MonoLite</title>
 </head>
 <body class="flex">
-<!--===: top section :===-->
-<section id="section_top_info" class="flex">
-  <div id="time_welcome" class="text-center">
-    <h3 id="current_time">11:11</h3>
-    <h5>Welcome, <strong class="username">Noriaku</strong></h5>
-  </div>
-  <div id="date_weather" class="text-center">
-    <h3 id="current_date">Feb 28</h3>
-    <h5 id="current_weather">23°C | took 47ms</h5>
-  </div>
-</section>
+    <!--===: top section :===-->
+    <section id="section_top_info" class="flex">
+        <div id="time_welcome" class="text-center">
+            <h3 id="current_time">11:11</h3>
+            <h5>Welcome, <strong class="username">Noriaku</strong></h5>
+        </div>
+        <div id="date_weather" class="text-center">
+            <h3 id="current_date">Feb 28</h3>
+            <h5 id="current_weather">23°C | took 47ms</h5>
+        </div>
+    </section>
+    
+    <!--===: middle section :===-->
+    <section id="section_middle_search" class="flex">
+        <form action="https://www.google.com/search" method="get" class="terminal-form">
+            <label for="search"><span class="col-04"> main</span> <span class="col-01 username">noriaku</span><span class="col-03">@minimal</span><span class="col-02">:~$</span> </label>
+            <input type="text" name="q" id="search" placeholder="" autocomplete="off" autofocus>
+        </form>
+    </section>
 
-<!--===: middle section :===-->
-<section id="section_middle_search" class="flex">
-  <form action="https://www.google.com/search" method="get" class="terminal-form">
-    <label for="search"><span class="col-04"> main</span> <span class="col-01 username">noriaku</span><span class="col-03">@minimal</span><span class="col-02">:~$</span> </label>
-    <input type="text" name="q" id="search" placeholder="" autocomplete="off" autofocus>
-  </form>
-</section>
+    <!--===: bottom section | links 6 categories :===-->
+    <section id="section_bottom_links" class="flex"> </section>
 
-<!--===: bottom section | links 6 categories :===-->
-<section id="section_bottom_links" class="flex"> </section>
-
-<script src="src/js/index.js"></script>
+    <script src="src/js/index.js"></script>
 </body>
 </html>
