@@ -71,27 +71,23 @@ sudo systemctl enable apache2
 
 > Obs. Guide made for debian based distros, cuz of `apt` packages. On the other hand, I've tested this setup using the [New Tab Override](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/) extension, and it works perfectly. Any questions, open a new issue.
 
-## Docker
+## 🐋 Setting up Docker
 
-Docker is another convenient way to host the start page.
+Docker is another convenient way to host the start page. You must install docker, for that see [docs](https://docs.docker.com/get-docker/).
 
-<details>
-<summary>Using Github</summary>
-<br>
-
-Build the image
+1. Build the image via `docker` command. All the instructions are written inside Dockerfile.
 
 ```bash
 docker build -t startup-page .
 ```
 
-Run the image (change the port mapping of 8080 into something you want)
+2. Run the image. You can change the port mapping of `8080` into something you want. At this point you must see your startup-page at `localhost:8080`.
 
 ```bash
 docker run -d -p 8080:80 startup-page
 ```
 
-And change your startup page (user.js file)   
+3. Change your startup page (`user.js` file, in your Profile Directory path). This will do automatically the config, also you can use an extension of New Tab or manually change the URL to show as new firefox windows inside configuration.
 
 ```js
 /*
@@ -106,7 +102,7 @@ user_pref('browser.startup.page', 0);
 user_pref('browser.startup.homepage', 'http://localhost:<port>');
 ```
 
-</details>
+> Obs. Using Docker with the -d option allows it to run as a background process, so it will operate each time you turn on your PC. On the other hand, if it does not work, you can try using: `docker run -d -p 8080:80 --restart=unless-stopped startup-page`, which will explicitly set it to do so.
 
 ## 💡 Shorcuts
 
